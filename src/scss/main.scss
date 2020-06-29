@@ -6,13 +6,30 @@
 
 .ticker {
   width: 100%;
+  padding: 0;
 
-  .inner {
+  div.inner {
     overflow-x: hidden;
+    width: 100%;
 
-    .item {
-      display: inner-block;
+    ul.display-area {
+      white-space: nowrap;
 
+      li.item {
+        display: inline-block;
+        margin-left: 0.5em;
+        padding: 4px 24px;
+        border: 1px solid #999999;
+        background-color: #dddddd;
+
+        &:first-child {
+          margin-left: 0;
+        }
+
+        div.main {
+          white-space: nowrap;
+        }
+      }
     }
   }
 }
