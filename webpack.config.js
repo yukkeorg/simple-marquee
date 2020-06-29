@@ -1,6 +1,6 @@
 const path = require("path");
 
-module.export = {
+module.exports = {
   mode: "development",
   output: {
     //path: path.resolve(__dirname, "output"),
@@ -9,21 +9,13 @@ module.export = {
   module: {
     rules: [
       {
-        test: "\.s?css$",
+        test: /\.scss$/i,
         use: [
-          "style-loader",
-          {
-            loader: "css-loader",
-            options: {
-              url: false,
-              importLoaders: 2,
-            }
-          },
-          {
-            loader: "sass-loader",
-          }
-        ]
-      }
-    ]
-  }
-}
+          { loader: "style-loader" },
+          { loader: "css-loader", options: { url: false, importLoaders: 2,} },
+          { loader: "sass-loader" },
+        ],
+      },
+    ],
+  },
+};
