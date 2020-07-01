@@ -1,48 +1,46 @@
-.ticker {
+div.ticker {
+  display: block;
   width: 100%;
   margin: 0;
   padding: 0;
-
   overflow: hidden;
   white-space: nowrap;
 
-  div.inner {
+  div.marquee {
+    display: inline-block;
+    padding-left: 100%;
 
-    div.marquee {
-      //animation-name: marquee;
-      animation-timing-function: linear;
-      animation-duration: 10s;
-      animation-iteration-count: infinite;
+    ul {
+      li {
+        display: inline-block;
+        margin-left: 0.5em;
+        padding: 4px 24px;
+        border: 1px solid #999999;
+        background-color: #dddddd;
 
-      padding-left: calc(100%);
-      padding-right: calc(100%);
+        &:first-child {
+          margin-left: 0;
+        }
 
-      ul.items {
-        li {
-          display: inline-block;
-          margin-left: 0.5em;
-          padding: 4px 24px;
-          border: 1px solid #999999;
-          background-color: #dddddd;
-
-          &:first-child {
-            margin-left: 0;
-          }
-
-          div.main {
-            white-space: nowrap;
-          }
+        div.main {
+          white-space: nowrap;
         }
       }
     }
   }
+  .is-running {
+    animation-name: marquee;
+    animation-timing-function: linear;
+    animation-duration: 30000ms;
+    animation-iteration-count: infinite;
+  }
 }
 
 @keyframes marquee {
-  from {
+  0% {
     transform: translate(0);
   }
-  to {
+  100% {
     transform: translate(-100%);
   }
 }
