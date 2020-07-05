@@ -12,7 +12,20 @@ html, body {
   overflow: hidden;
 }
 
+@mixin center-w {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@mixin center-h {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 .demo {
+  position: absolute;
+  @include center-w;
+
   width: 70vw;
 
   margin-top: 1vh;
@@ -22,14 +35,31 @@ html, body {
   background-color: red;
 
   ul.items {
+    margin-right: 100px;
+
     li {
       display: inline-block;
+      position: relative;
       margin-left: 0.5em;
-      padding: 4px 24px;
-      border: 1px solid #999999;
-      background-color: #dddddd;
+      padding: 0 24px;
+
+      z-index: 1;
 
       font-family: "Teko";
+
+      &::before {
+        display: block;
+        position: absolute;
+        top:0;
+        bottom: 0;
+        left:0;
+        right:0;
+        content: "";
+        transform: skewX(-30deg);
+        z-index: -1;
+        border: 1px solid #999999;
+        background-color: #dddddd;
+      }
 
       &:first-child {
         margin-left: 0;
