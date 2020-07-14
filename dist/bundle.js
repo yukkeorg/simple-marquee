@@ -86,25 +86,14 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/sass-loader/dist/cjs.js!./src/scss/demo.scss":
-/*!*******************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js??ref--4-1!./node_modules/sass-loader/dist/cjs.js!./src/scss/demo.scss ***!
-  \*******************************************************************************************************************/
+/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/sass-loader/dist/cjs.js!./src/scss/marquee.scss":
+/*!**********************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--5-1!./node_modules/sass-loader/dist/cjs.js!./src/scss/marquee.scss ***!
+  \**********************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\nexports = ___CSS_LOADER_API_IMPORT___(false);\nexports.push([module.i, \"@import url(https://fonts.googleapis.com/css2?family=Teko&display=swap);\"]);\n// Module\nexports.push([module.i, \"*, *:before, *:after {\\n  box-sizing: border-box;\\n  margin: 0;\\n  padding: 0;\\n}\\n\\nhtml, body {\\n  width: 100vw;\\n  height: 100vh;\\n  overflow: hidden;\\n}\\n\\n.demo {\\n  position: absolute;\\n  left: 50%;\\n  transform: translateX(-50%);\\n  top: 50%;\\n  transform: translateY(-50%);\\n  width: 70vw;\\n  margin-top: 1vh;\\n  margin-left: auto;\\n  margin-right: auto;\\n  background-color: red;\\n}\\n.demo ul.items {\\n  margin-right: 100px;\\n}\\n.demo ul.items li {\\n  display: inline-block;\\n  position: relative;\\n  margin-left: 0.5em;\\n  padding: 0 24px;\\n  z-index: 1;\\n  font-family: \\\"Teko\\\";\\n}\\n.demo ul.items li::before {\\n  display: block;\\n  position: absolute;\\n  top: 0;\\n  bottom: 0;\\n  left: 0;\\n  right: 0;\\n  content: \\\"\\\";\\n  transform: skewX(-30deg);\\n  z-index: -1;\\n  border: 1px solid #999999;\\n  background-color: #dddddd;\\n}\\n.demo ul.items li:first-child {\\n  margin-left: 0;\\n}\\n.demo ul.items li div.main {\\n  white-space: nowrap;\\n}\", \"\"]);\n// Exports\nmodule.exports = exports;\n\n\n//# sourceURL=webpack:///./src/scss/demo.scss?./node_modules/css-loader/dist/cjs.js??ref--4-1!./node_modules/sass-loader/dist/cjs.js");
-
-/***/ }),
-
-/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/sass-loader/dist/cjs.js!./src/scss/ticker.scss":
-/*!*********************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js??ref--4-1!./node_modules/sass-loader/dist/cjs.js!./src/scss/ticker.scss ***!
-  \*********************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\nexports = ___CSS_LOADER_API_IMPORT___(false);\n// Module\nexports.push([module.i, \"div.marquee {\\n  display: block;\\n  width: 100%;\\n  margin: 0;\\n  padding: 0;\\n  overflow: hidden;\\n  white-space: nowrap;\\n}\\ndiv.marquee > div {\\n  display: inline-block;\\n  padding-left: 100%;\\n}\\ndiv.marquee .is-running {\\n  animation-name: marquee;\\n  animation-timing-function: linear;\\n  animation-duration: 30000ms;\\n  animation-iteration-count: infinite;\\n}\\n\\n@keyframes marquee {\\n  0% {\\n    transform: translate(0);\\n  }\\n  100% {\\n    transform: translate(-100%);\\n  }\\n}\", \"\"]);\n// Exports\nmodule.exports = exports;\n\n\n//# sourceURL=webpack:///./src/scss/ticker.scss?./node_modules/css-loader/dist/cjs.js??ref--4-1!./node_modules/sass-loader/dist/cjs.js");
+eval("// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\nexports = ___CSS_LOADER_API_IMPORT___(false);\n// Module\nexports.push([module.i, \"div.marquee {\\n  display: block;\\n  width: 100%;\\n  margin: 0;\\n  padding: 0;\\n  overflow: hidden;\\n  white-space: nowrap;\\n}\\ndiv.marquee > div {\\n  display: inline-block;\\n  padding-left: 100%;\\n}\\ndiv.marquee .is-running {\\n  animation-name: marquee;\\n  animation-timing-function: linear;\\n  animation-duration: 30000ms;\\n  animation-iteration-count: infinite;\\n}\\n\\n@keyframes marquee {\\n  0% {\\n    transform: translate(0);\\n  }\\n  100% {\\n    transform: translate(-100%);\\n  }\\n}\", \"\"]);\n// Exports\nmodule.exports = exports;\n\n\n//# sourceURL=webpack:///./src/scss/marquee.scss?./node_modules/css-loader/dist/cjs.js??ref--5-1!./node_modules/sass-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -140,29 +129,18 @@ eval("\n\nvar isOldIE = function isOldIE() {\n  var memo;\n  return function mem
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scss_demo_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./scss/demo.scss */ \"./src/scss/demo.scss\");\n/* harmony import */ var _scss_demo_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_scss_demo_scss__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _scss_ticker_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./scss/ticker.scss */ \"./src/scss/ticker.scss\");\n/* harmony import */ var _scss_ticker_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_scss_ticker_scss__WEBPACK_IMPORTED_MODULE_1__);\n\n\n\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scss_marquee_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./scss/marquee.scss */ \"./src/scss/marquee.scss\");\n/* harmony import */ var _scss_marquee_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_scss_marquee_scss__WEBPACK_IMPORTED_MODULE_0__);\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }\n\nfunction _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }\n\n\n\nvar Marquee = /*#__PURE__*/function () {\n  function Marquee(elem) {\n    _classCallCheck(this, Marquee);\n\n    this.elem = elem;\n  }\n\n  _createClass(Marquee, [{\n    key: \"start\",\n    value: function start() {\n      var target = this.elem.querySelector(\"\");\n    }\n  }, {\n    key: \"setDulation\",\n    value: function setDulation(millisecond) {}\n  }]);\n\n  return Marquee;\n}();\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ }),
 
-/***/ "./src/scss/demo.scss":
-/*!****************************!*\
-  !*** ./src/scss/demo.scss ***!
-  \****************************/
+/***/ "./src/scss/marquee.scss":
+/*!*******************************!*\
+  !*** ./src/scss/marquee.scss ***!
+  \*******************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("var api = __webpack_require__(/*! ../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\");\n            var content = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js??ref--4-1!../../node_modules/sass-loader/dist/cjs.js!./demo.scss */ \"./node_modules/css-loader/dist/cjs.js?!./node_modules/sass-loader/dist/cjs.js!./src/scss/demo.scss\");\n\n            content = content.__esModule ? content.default : content;\n\n            if (typeof content === 'string') {\n              content = [[module.i, content, '']];\n            }\n\nvar options = {};\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = api(content, options);\n\n\n\nmodule.exports = content.locals || {};\n\n//# sourceURL=webpack:///./src/scss/demo.scss?");
-
-/***/ }),
-
-/***/ "./src/scss/ticker.scss":
-/*!******************************!*\
-  !*** ./src/scss/ticker.scss ***!
-  \******************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("var api = __webpack_require__(/*! ../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\");\n            var content = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js??ref--4-1!../../node_modules/sass-loader/dist/cjs.js!./ticker.scss */ \"./node_modules/css-loader/dist/cjs.js?!./node_modules/sass-loader/dist/cjs.js!./src/scss/ticker.scss\");\n\n            content = content.__esModule ? content.default : content;\n\n            if (typeof content === 'string') {\n              content = [[module.i, content, '']];\n            }\n\nvar options = {};\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = api(content, options);\n\n\n\nmodule.exports = content.locals || {};\n\n//# sourceURL=webpack:///./src/scss/ticker.scss?");
+eval("var api = __webpack_require__(/*! ../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\");\n            var content = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js??ref--5-1!../../node_modules/sass-loader/dist/cjs.js!./marquee.scss */ \"./node_modules/css-loader/dist/cjs.js?!./node_modules/sass-loader/dist/cjs.js!./src/scss/marquee.scss\");\n\n            content = content.__esModule ? content.default : content;\n\n            if (typeof content === 'string') {\n              content = [[module.i, content, '']];\n            }\n\nvar options = {};\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = api(content, options);\n\n\n\nmodule.exports = content.locals || {};\n\n//# sourceURL=webpack:///./src/scss/marquee.scss?");
 
 /***/ })
 
