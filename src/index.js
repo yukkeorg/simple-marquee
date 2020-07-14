@@ -1,2 +1,1 @@
-import './scss/demo.scss';
-import './scss/ticker.scss';
+import './scss/marquee.scss';
