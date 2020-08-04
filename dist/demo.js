@@ -81,31 +81,31 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/index.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./demo/index.js");
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/index.js":
-/*!**********************!*\
-  !*** ./src/index.js ***!
-  \**********************/
+/***/ "./demo/demo.scss":
+/*!************************!*\
+  !*** ./demo/demo.scss ***!
+  \************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./demo/demo.scss?");
+
+/***/ }),
+
+/***/ "./demo/index.js":
+/*!***********************!*\
+  !*** ./demo/index.js ***!
+  \***********************/
 /*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scss_marquee_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./scss/marquee.scss */ \"./src/scss/marquee.scss\");\n/* harmony import */ var _scss_marquee_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_scss_marquee_scss__WEBPACK_IMPORTED_MODULE_0__);\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }\n\nfunction _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }\n\n\n\nvar Marquee = /*#__PURE__*/function () {\n  function Marquee(elem) {\n    _classCallCheck(this, Marquee);\n\n    this.elem = elem;\n  }\n\n  _createClass(Marquee, [{\n    key: \"start\",\n    value: function start() {\n      var target = this.elem.querySelector(\"\");\n    }\n  }, {\n    key: \"setDulation\",\n    value: function setDulation(millisecond) {}\n  }]);\n\n  return Marquee;\n}();\n\n//# sourceURL=webpack:///./src/index.js?");
-
-/***/ }),
-
-/***/ "./src/scss/marquee.scss":
-/*!*******************************!*\
-  !*** ./src/scss/marquee.scss ***!
-  \*******************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/scss/marquee.scss?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _demo_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./demo.scss */ \"./demo/demo.scss\");\n/* harmony import */ var _demo_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_demo_scss__WEBPACK_IMPORTED_MODULE_0__);\n\n\n//# sourceURL=webpack:///./demo/index.js?");
 
 /***/ })
 

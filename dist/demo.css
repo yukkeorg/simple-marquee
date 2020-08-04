@@ -1,0 +1,53 @@
+@import url(https://fonts.googleapis.com/css2?family=Teko&display=swap);
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.demo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70vw;
+  margin-top: 1vh;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: red;
+}
+.demo ul.items {
+  margin-right: 100px;
+}
+.demo ul.items li {
+  display: inline-block;
+  position: relative;
+  margin-left: 0.5em;
+  padding: 0 24px;
+  z-index: 1;
+  font-family: "Teko";
+}
+.demo ul.items li::before {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: "";
+  transform: skewX(-30deg);
+  z-index: -1;
+  border: 1px solid #999999;
+  background-color: #dddddd;
+}
+.demo ul.items li:first-child {
+  margin-left: 0;
+}
+.demo ul.items li div.main {
+  white-space: nowrap;
+}

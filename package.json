@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "webpack",
+    "build": "npm run build:lib; npm run build:demo",
+    "build:lib": "webpack",
+    "build:demo": "webpack --config webpack.demo.js",
     "start:dev": "webpack-dev-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -18,6 +20,7 @@
     "@babel/preset-env": "^7.10.4",
     "babel-loader": "^8.1.0",
     "css-loader": "^3.6.0",
+    "mini-css-extract-plugin": "^0.9.0",
     "sass": "^1.26.9",
     "sass-loader": "^8.0.2",
     "style-loader": "^1.2.1",
